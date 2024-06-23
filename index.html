@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sideleft">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUq_fdLmf6mXkIV7FxhrwJfLuECGCTNAELIOiN1UUFIMLOGXRmitmWm0FqCZ7wr_dCIoQ&usqp=CAU" alt="Imagem Avatar" class="icon">
+            <h2>João Lucas Medeiros</h2>
+            <p>Joao Lucas é um desenvolvedor de software iniciante que está em transição de carreira, vem buscando novos desafios e oportunidades no mundo de desenvolvimento. Interessado por aprender e melhorar suas habilidades, Ele está comprometido em se tornar um profissional qualificado na área de desenvolvimento de sistemas. </p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Experiências</a></li>
+                <li><a href="#">Certificações</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </aside>
+        <main class="content"> 
+            <h1>Lista de tarefas</h1>
+            <div class="tasks-container">
+                <div class="tasks">
+                    <h2>Dia</h2>
+                    <ol id="day-tasks">
+                        
+                    </ol>
+                    <div class="task-input-container">
+                        <input type="text" id="new-day-task" placeholder="Nova tarefa">
+                        <button onclick="addTask('day')">Adicionar</button>
+                    </div>
+                </div>
+                <div class="tasks">
+                    <h2>Noite</h2>
+                    <ol id="night-tasks">
+                        
+                    </ol>
+                    <div class="task-input-container">
+                        <input type="text" id="new-night-task" placeholder="Nova tarefa">
+                        <button onclick="addTask('night')">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

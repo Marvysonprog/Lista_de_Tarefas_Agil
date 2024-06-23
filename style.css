@@ -1,0 +1,162 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh; 
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sideleft {
+    background-color: #586680;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sideleft .icon {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #34495e;
+}
+
+.sideleft h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sideleft p {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.sideleft ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sideleft ul li {
+    margin-bottom: 10px;
+}
+
+.sideleft ul li a {
+    background-color: #1C2036;
+    text-decoration: none;
+    color: #18be9d;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+.sideleft ul li a:hover {
+    color: #158871;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #EDEEF0;
+    overflow-y: auto;
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.tasks-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks {
+    width: 45%;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tasks h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.tasks ol {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.tasks ol li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.tasks ol li:hover {
+    background-color: #e1e1e1;
+}
+
+.tasks ol li.completed {
+    text-decoration: line-through;
+    color: #b3b3b3;
+}
+
+.task-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.task-input-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.task-input-container button {
+    width: 50%;
+    padding: 10px;
+    background-color: #18c09e;
+    color: #1C2036;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.task-input-container button:hover {
+    background-color: #18c09e;
+}
+
+.lixeira {
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+    margin-left : 20px;
+}
